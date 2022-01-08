@@ -15,7 +15,6 @@ for character in phrase:
     else:
         if word != "":
             list.append(word)
-        word = ""
+            word = ""
 
-#list.append(word)
 print(list)
