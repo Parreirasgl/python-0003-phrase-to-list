@@ -1,6 +1,9 @@
 # Program to transform words from phrases into a list.
 # Programa para transformar palavras de frases em uma lista.
 
+# Comments are long because they were written in two languages.
+# Os comentários estão grandes, pois são escritos em dois idiomas.
+
 phrase = input("Write something: ")
 
 list = []
