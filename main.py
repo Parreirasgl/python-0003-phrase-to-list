@@ -6,12 +6,16 @@ pontuation = ["!", "?", ".", ":", ",", ")", "("]
 
 for character in phrase:
     if character in pontuation:
+        if word != "":
+            list.append(word)
+            word = ""
         list.append(character)
     elif character != ' ':
         word += character
     else:
-        list.append(word)
+        if word != "":
+            list.append(word)
         word = ""
 
-list.append(word)
+#list.append(word)
 print(list)
