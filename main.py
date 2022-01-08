@@ -1,10 +1,13 @@
-
 phrase = input("Write something: ")
 
 list = []
 word = ""
+pontuation = ["!", "?", ".", ":", ",", ")", "("]
+
 for character in phrase:
-    if character != ' ':
+    if character in pontuation:
+        list.append(character)
+    elif character != ' ':
         word += character
     else:
         list.append(word)
